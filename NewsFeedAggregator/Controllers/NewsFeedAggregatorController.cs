@@ -110,6 +110,7 @@ namespace NewsFeedAggregator.Controllers
 
             var apiKey = _configuration["NewsApi:ApiKey"];
             var httpClient = new HttpClient();
+            //tesline
 
             var interests = user.Interests.Split(',').Select(i => i.Trim()).ToList();
             var allArticles = new List<object>();
